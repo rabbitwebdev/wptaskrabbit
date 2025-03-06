@@ -1,0 +1,166 @@
+.single-task {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  background-color: #0f0122;
+  color: #fff;
+}
+
+.single-task .task-container {
+  width: 98%;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+.single-task .task-container h1.single-header {
+    font-style: italic;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 3px;
+  position: relative;
+  width: fit-content;
+}
+
+.single-task .task-container h1.single-header::after {
+    content:'';
+    background-image:url("assets/images/task-rabbit-icon.png");
+    position: absolute;
+  padding-bottom: 25px;
+  width: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -15px;
+  right: -30px;
+}
+
+.single-task .task-container .task-status-in.progress {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: green;
+  letter-spacing: 1px;
+  font-style: italic;
+	border: 1px solid green;
+  padding: 5px 20px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.single-task .task-container .task-status-pending.approval {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: red;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+.single-task .task-container .task-status-approved.by.user {
+  text-transform: uppercase;
+  color: green;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 1px solid green;
+  padding: 2px 20px;
+  font-size: 15px;
+	background-color: #fff;
+}
+
+.single-task .task-container .task-status-approved {
+  text-transform: uppercase;
+  color: green;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 1px solid green;
+  padding: 2px 20px;
+  font-size: 15px;
+	background-color: #fff;
+}
+
+.single-task .task-container .task-status-rejected {
+  color: red;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #fff;
+  padding: 5px 20px;
+  font-size: 16px;
+  background-color: #fff;
+}
+.single-task .task-container {
+    display:flex;
+    justify-content: space-between;
+}
+
+.cost-hr {
+	color:#ff8154;
+	font-weight: 800;
+  text-transform: uppercase;
+}
+.cost-hr strong {
+	color:#fff;
+	text-transform: capitalize;
+}
+
+.single-task .task-container .task-status-completed {
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border: 1px solid #fff;
+  background-color: white;
+  padding: 8px;
+  color: #0d0518;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+@media (max-width: 767.98px) {
+.single-task .task-container {
+    display:block;
+    width: 100%;
+	padding:10px;
+     margin: 70px auto;
+} 
+	.single-task .task-container p.small {
+   font-size:14px !important;
+} 
+.single-task .task-container .col {
+  max-width:100% !important;
+}
+	.single-task .task-container .task-status-in.progress {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+	.single-task .task-container .task-status-approved.by.user {
+  padding: 2px 10px;
+  font-size: 14px;
+}
+	
+		.single-task .task-container .task-status-approved {
+  padding: 2px 10px;
+  font-size: 14px;
+}
+.single-task .task-container .task-status-rejected {
+  padding: 5px 10px;
+  font-size: 14px;
+ 
+}
+} /* end mob */
+.single-task .task-container .col {
+  padding: 50px 20px;
+  margin-bottom:50px;
+  background-color: #0d0518;
+  box-shadow: 2px 3px 9px #1806305e;
+  max-width:48% ;
+}
+
+.wp-rabbit-table-wrps {
+    overflow: hidden;
+  overflow-x: auto;
+}
+
+.wprabbit-task-table {
+  width: 100%;
+  white-space: nowrap;
+  overflow-y: hidden;
+}

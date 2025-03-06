@@ -1,0 +1,12 @@
+{
+    "apiVersion": 2,
+    "name": "wprabbit/task-form",
+    "title": "Task Submission Form",
+    "category": "widgets",
+    "icon": "editor-insertmore",
+    "keywords": ["task", "form", "submission"],
+    "editorScript": "wprabbit-task-form-editor-script",
+    "editorStyle": "wprabbit-task-form-editor-style",
+    "script": "wprabbit-task-form-script",
+    "style": "wprabbit-task-form-style"
+}
