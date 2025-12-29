@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) {
 // });
 
 add_action('init', function () {
-    register_block_type(__DIR__ . '/blocks/task-form/');
+   
 
     wp_register_script(
         'wprabbit-task-form-editor-script',
@@ -25,4 +25,8 @@ add_action('init', function () {
         array(),
         filemtime(plugin_dir_path(__FILE__) . '/blocks/task-form/style.css')
     );
+    register_block_type(__DIR__ . '/blocks/task-form/', array(
+        'editor_script' => 'wprabbit-task-form-editor-script',
+        'style'         => 'wprabbit-task-form-style',
+    ));
 });
