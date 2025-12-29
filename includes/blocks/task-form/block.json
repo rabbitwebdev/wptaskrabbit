@@ -1,12 +1,59 @@
 {
-    "apiVersion": 2,
-    "name": "wprabbit/task-form",
-    "title": "Task Submission Form",
-    "category": "widgets",
-    "icon": "editor-insertmore",
-    "keywords": ["task", "form", "submission"],
-    "editorScript": "wprabbit-task-form-editor-script",
-    "editorStyle": "wprabbit-task-form-editor-style",
-    "script": "wprabbit-task-form-script",
-    "style": "wprabbit-task-form-style"
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wprabbit/task-form",
+  "title": "Task Submission Form",
+  "category": "widgets",
+  "icon": "star-filled",
+  "description": "Display Task Submission Form.",
+  "textdomain": "wp-rabbit-dev",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "What task do you need help with?"
+    },
+    "btnUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "btnText": {
+      "type": "string",
+      "default": "Submit Task"
+    },
+    "limit": {
+      "type": "number",
+      "default": 6
+    },
+    "minRating": {
+      "type": "number",
+      "default": 1
+    },
+    "showStars": {
+      "type": "boolean",
+      "default": true
+    },
+    "showDate": {
+      "type": "boolean",
+      "default": true
+    },
+    "showText": {
+      "type": "boolean",
+      "default": true
+    },
+    "layout": {
+      "type": "string",
+      "default": "grid"
+    },
+    "bgColor": {
+      "type": "string",
+      "default": "transparent"
+    },
+    "padding": {
+      "type": "string",
+      "default": "none"
+    }
+  },
+  "supports": {
+    "html": false
+  }
 }
