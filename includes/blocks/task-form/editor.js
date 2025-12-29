@@ -96,8 +96,8 @@
                         })
                     )
                 ),
-                el( 'div', { className: 'grr-block-preview' },
-                    el( 'strong', {}, 'Google Reviews Rabbit' ),
+                el( 'div', { className: 'wp-rabbit-dev' },
+                    el( 'strong', {}, 'Task Rabbit' ),
                     el( 'p', { style: { marginTop: '8px' } }, 'Preview uses your front-end output. If you enabled Test Mode, you\'ll see mock reviews.' ),
                     el( 'p', { style: { marginTop: '8px', opacity: 0.75 } },
                         'Limit: ' + (attrs.limit || 6) + ' • Min rating: ' + (attrs.minRating || 1) + ' • Layout: ' + (attrs.layout || 'grid')
