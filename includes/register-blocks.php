@@ -28,13 +28,13 @@ add_action('init', function () {
 
      wp_register_script(
         'task-block-editor',
-        plugin_dir_url(__FILE__) . 'blocks/task-form/editor.js',
+        plugin_dir_url(__FILE__) . '/blocks/task-form/editor.js',
         [ 'wp-blocks', 'wp-element', 'wp-editor', 'wp-components', 'wp-i18n' ],
         filemtime( plugin_dir_path( __FILE__ ) . 'blocks/task-form/editor.js' ),
         true
     );
 
-     register_block_type( plugin_dir_path( __FILE__ ) . 'includes/blocks/task-form/', [
+     register_block_type( plugin_dir_path( __FILE__ ) . '/blocks/task-form/', [
         'editor_script' => 'task-block-editor',
          'render_callback' => 'wp_render_task_block',
     ]);
