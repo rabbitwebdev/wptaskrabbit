@@ -48,4 +48,47 @@ add_action('wp_enqueue_scripts', 'wprabbit_enqueue_scripts');
 
 
 
+// function task_register_custom_block() {
+//     $dir = __DIR__;
 
+//     // Build paths
+//     $script_asset_path = "$dir/includes/blocks/task-form/index.js";
+//     $style_asset_path = "$dir/includes/blocks/task-form/index.css";
+
+//     // Register the block editor script
+//     wp_register_script(
+//         'wprg-block-editor-script',
+//         plugins_url( 'includes/blocks/task-form/index.js', __FILE__ ),
+//         array( 'wp-blocks', 'wp-element', 'wp-editor', 'wp-components', 'wp-i18n' ),
+//         filemtime( $script_asset_path )
+//     );
+
+//     // Register editor stylesheet
+//     wp_register_style(
+//         'wprg-block-editor-style',
+//         plugins_url( 'includes/blocks/task-form/index.css', __FILE__ ),
+//         array( 'wp-edit-blocks' ),
+//         filemtime( $style_asset_path )
+//     );
+
+//     register_block_type( 'wprg/rabbit-task-block', array(
+//         'editor_script' => 'wprg-block-editor-script',
+//         'editor_style'  => 'wprg-block-editor-style',
+//         'render_callback' => 'myplugin_render_select_game_block',
+//         'attributes' => array(
+//             'selectGame' => array(
+//                 'type' => 'string',
+//                 'default' => 'wp_rabbit_genres',
+//             ),
+//             'buttonText' => array(
+//                 'type' => 'string',
+//                 'default' => 'View Game',
+//             ),
+//              'contentText' => array(
+//                 'type' => 'string',
+//                 'default' => 'text',
+//             ),
+//         ),
+//     ) );
+// }
+// add_action( 'init', 'task_register_custom_block' );
