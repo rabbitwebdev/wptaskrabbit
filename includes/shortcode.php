@@ -20,7 +20,7 @@ add_shortcode('wprabbit_task_form', function ($atts) {
     $title = sanitize_text_field( $atts['title'] );
     ob_start();
     ?>
-    <div id="wprabbit-task-form-container" class="<?php echo esc_attr($form_layout); ?> <?php echo esc_attr($bg_color); ?> <?php echo esc_attr($padding); ?>">
+    <div id="wprabbit-task-form-container" class="<?php echo esc_attr($form_layout); ?> <?php echo esc_attr($bg_color); ?> <?php echo esc_attr($padding); ?> py-22">
         <?php if (!empty($title)): ?>
             <h2 class="wprabbit-form-title text-center text-white px-6 text-lg sm:text-2xl uppercase mb-4 mt-4 pt-5 pb-5"><?php echo esc_html($title); ?></h2>
         <?php endif; ?>
