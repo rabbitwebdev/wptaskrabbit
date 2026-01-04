@@ -22,7 +22,7 @@ add_shortcode('wprabbit_task_form', function ($atts) {
     ?>
     <div id="wprabbit-task-form-container" class="<?php echo esc_attr($form_layout); ?> <?php echo esc_attr($bg_color); ?> <?php echo esc_attr($padding); ?>">
         <?php if (!empty($title)): ?>
-            <h2 class="wprabbit-form-title m-auto pt-5 pb-5"><?php echo esc_html($title); ?></h2>
+            <h2 class="wprabbit-form-title text-center text-white px-6 text-lg sm:text-2xl uppercase mb-4 mt-4 pt-5 pb-5"><?php echo esc_html($title); ?></h2>
         <?php endif; ?>
     <form id="wprabbit-task-form" class="task-rabbit-form wprabbit-task-form" action="" method="post" >
         <?php wp_nonce_field('wprabbit_task_nonce', 'wprabbit_task_nonce_field'); ?>
