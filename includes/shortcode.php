@@ -4,14 +4,19 @@ if (!defined('ABSPATH')) {
 }
 
 // Shortcode for the task submission form
-add_shortcode('wprabbit_task_form', function () {
+add_shortcode('wprabbit_task_form', function ($atts) {
     if (!is_user_logged_in()) {
         return "<p>You must be logged in to submit a task.</p>";
     }
  $form_layout = get_option('wprabbit_form_layout') === '2' ? 'two-column' : 'one-column';
+  $atts = shortcode_atts( [
+        'bg_color'   => 'transparent',
+    ], $atts, 'wprabbit_task_form' );
+
+    $bg_color = sanitize_text_field( $atts['bg_color'] );
     ob_start();
     ?>
-    <div id="wprabbit-task-form-container" class="<?php echo esc_attr($form_layout); ?>">
+    <div id="wprabbit-task-form-container" class="<?php echo esc_attr($form_layout); ?> <?php echo esc_attr($bg_color); ?>">
     <form id="wprabbit-task-form" class="task-rabbit-form wprabbit-task-form" action="" method="post" >
         <?php wp_nonce_field('wprabbit_task_nonce', 'wprabbit_task_nonce_field'); ?>
 

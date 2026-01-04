@@ -16,7 +16,7 @@
 
             return el( 'div', { className: props.className },
                 InspectorControls && el( InspectorControls, {},
-                    el(components.PanelBody, { title: i18n.__('Google Reviews', 'wp-rabbit-dev'), initialOpen: true },
+                    el(components.PanelBody, { title: i18n.__('Task Form', 'wp-rabbit-dev'), initialOpen: true },
                         el( components.TextControl, {
                             label: i18n.__( 'Title', 'wp-rabbit-dev' ),
                             value: attrs.title,
